@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import TableRow from '../TableRow/TableRow';
 
 function Table(props){
-    const [contacts] = useState(
+    const [contacts ] = useState(
        
         [
             {id:1, firstname: 'Ali' , lastname: 'davudi' , email:'ali@gmail.com' , phone:'09123846734'},
@@ -19,13 +19,33 @@ function Table(props){
         ]
         
     )
+
+    const [search , setSearch] = useState('');
+
+    const handleChange = (event) => {
+        setSearch(event.target.value);
+    }
+    
+    const filteredContacts = contacts.filter(contact => 
+        contact.firstname.startsWith(search.toUpperCase())
+    )
+
+        console.log(filteredContacts);
     
     return <>
         
         <div className="container">
+            <div className="row">
+                <input 
+                    name={'search'} 
+                    value={search} 
+                    onChange={handleChange} 
+                    placeholder="Search by Name or Phone"
+                />
+            </div>
             <div className="row justify-content-center">
                 <div className="col">
-                    <table className="table table-hover ">
+                    <table className="table table-hover">
                         <thead className="headerColor">
                             <tr className="">
                                 <th>Name</th>
@@ -35,7 +55,7 @@ function Table(props){
                             </tr>
                         </thead>
                         <tbody>
-                            {contacts.map(contact=>(
+                            {filteredContacts.map(contact=>(
                                 <TableRow 
                                     key={contact.id} 
                                     firstname={contact.firstname}
