@@ -6,16 +6,16 @@ function Table(props){
     const [contacts ] = useState(
        
         [
-            {id:1, firstname: 'Ali' , lastname: 'davudi' , email:'ali@gmail.com' , phone:'09123846734'},
+            {id:1, firstname: 'ali' , lastname: 'davudi' , email:'ali@gmail.com' , phone:'09123846734'},
             {id:2, firstname: 'Saeed' , lastname: 'mohammadi' , email:'saeed@gmail.com' , phone:'09103843917'},
             {id:3, firstname: 'kazem' , lastname: 'masumi' , email:'kazem@gmail.com' , phone:'09363843998'},
             {id:4, firstname: 'Nima' , lastname: 'mohseni' , email:'nima@gmail.com' , phone:'09353843972'},
             {id:5, firstname: 'Alireza' , lastname: 'sharifi' , email:'alireza@gmail.com' , phone:'09193843924'},
             {id:6, firstname: 'Makan' , lastname: 'alimohammadi' , email:'makan@gmail.com' , phone:'09123843911'},
-            {id:7, firstname: 'Nader' , lastname: 'amini' , email:'nader@gmail.com' , phone:'09193844928'},
+            {id:7, firstname: 'nader' , lastname: 'amini' , email:'nader@gmail.com' , phone:'09193844928'},
             {id:8, firstname: 'Yaser' , lastname: 'davudi' , email:'Yaser@gmail.com' , phone:'09153843949'},
             {id:9, firstname: 'Karim' , lastname: 'davudi' , email:'karim@gmail.com' , phone:'09133413972'},
-            {id:10, firstname: 'Morteza' , lastname: 'davudi' , email:'morteza@gmail.com' , phone:'09103843955'},
+            {id:10, firstname:'Morteza' , lastname: 'davudi' , email:'morteza@gmail.com' , phone:'09103843955'},
         ]
         
     )
@@ -26,9 +26,10 @@ function Table(props){
         setSearch(event.target.value);
     }
     
-    const filteredContacts = contacts.filter(contact => 
-        contact.firstname.startsWith(search.toUpperCase())
-    )
+    let filteredContacts = contacts.filter(contact => 
+           contact.phone.startsWith(search) 
+        || contact.firstname.startsWith(search.toLowerCase()) 
+        || contact.firstname.startsWith(search.toUpperCase()));
 
         console.log(filteredContacts);
     
