@@ -1,13 +1,18 @@
 import React from 'react';
 
-function TableRow ({firstname , lastname , email , phone})  {
+function TableRow(props) {
+
     return (
         <tr>
-            <td>{`${firstname}`}</td>
-            <td>{`${lastname}`}</td>
-            <td>{`${email}`}</td>
-            <td>{`${phone}`}</td>
+            <td>{`${props.firstname}`}</td>
+            <td>{`${props.lastname}`}</td>
+            <td>{`${props.email}`}</td>
+            <td>{`${props.phone}`}</td>
+            <td>
+                <button onClick={props.handleDelete}>Delete</button>
+            </td>
         </tr>
+
     );
 }
 

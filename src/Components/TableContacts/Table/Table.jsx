@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import TableRow from '../TableRow/TableRow';
 
-function Table(props){
-    const [contacts ] = useState(
+function Table(props ){
+    const [contacts ,setContacts] = useState(
        
         [
             {id:1, firstname: 'ali' , lastname: 'davudi' , email:'ali@gmail.com' , phone:'09123846734'},
@@ -31,7 +31,10 @@ function Table(props){
         || contact.firstname.startsWith(search.toLowerCase()) 
         || contact.firstname.startsWith(search.toUpperCase()));
 
-        console.log(filteredContacts);
+
+    const handleDelete = (id) => {
+        setContacts([...contacts.filter(contact => contact.id !== id)]);
+    }
     
     return <>
         
@@ -53,6 +56,7 @@ function Table(props){
                                 <th>Lastname</th>
                                 <th>Email</th>
                                 <th>Phone</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,9 +66,11 @@ function Table(props){
                                     firstname={contact.firstname}
                                     lastname={contact.lastname}    
                                     email={contact.email}    
-                                    phone={contact.phone}    
+                                    phone={contact.phone}
+                                    handleDelete={()=>handleDelete(contact.id)}
                                 />
                             ))}
+                                    
                         </tbody>
                     </table>
                 </div>
