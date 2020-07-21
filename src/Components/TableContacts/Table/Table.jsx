@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import TableRow from '../TableRow/TableRow';
+import FormContact from '../FormContact/FormContact';
 
 function Table(props ){
     const [contacts ,setContacts] = useState(
@@ -32,6 +33,10 @@ function Table(props ){
         || contact.firstname.startsWith(search.toUpperCase()));
 
 
+    const handleAdd = (obj) =>{
+        setContacts([...contacts , obj]);
+    }
+
     const handleDelete = (id) => {
         setContacts([...contacts.filter(contact => contact.id !== id)]);
     }
@@ -46,6 +51,9 @@ function Table(props ){
                     onChange={handleChange} 
                     placeholder="Search by Name or Phone"
                 />
+            </div>
+            <div>
+                <FormContact handleAdd={handleAdd}/>
             </div>
             <div className="row justify-content-center">
                 <div className="col">
