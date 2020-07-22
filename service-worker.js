@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/maktab_func-component-contact/precache-manifest.91b2065b38a91de5667bb4396bbb018d.js"
+  "/maktab_func-component-contact/precache-manifest.b7c39be8da55fa95bfa150996b9ef2ae.js"
 );
 
 self.addEventListener('message', (event) => {
