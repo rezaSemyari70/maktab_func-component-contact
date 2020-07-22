@@ -34,11 +34,12 @@ function Table(props ){
         || contact.firstname.startsWith(search.toLowerCase()) 
         || contact.firstname.startsWith(search.toUpperCase()));
 
-
+    // Add Contact to Table
     const handleAdd = (obj) =>{
         setContacts([...contacts , obj]);
     }
 
+    //Delete Contact 
     const handleDelete = (id) => {
         setContacts([...contacts.filter(contact => contact.id !== id)]);
     }
@@ -85,8 +86,7 @@ function Table(props ){
                                     phone={contact.phone}
                                     handleDelete={()=>handleDelete(contact.id)}
                                 />
-                            ))}
-                                    
+                            ))}     
                         </tbody>
                     </table>
                 </div>

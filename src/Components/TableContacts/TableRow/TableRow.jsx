@@ -13,9 +13,7 @@ function TableRow(props) {
             <td>
                 <button className="btn-outline-danger rounded " onClick={props.handleDelete}>Delete</button>
             </td>
-            
         </tr>
-
     );
 }
 

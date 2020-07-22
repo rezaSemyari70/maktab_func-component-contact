@@ -14,7 +14,8 @@ const FormContact = (props) => {
             [event.target.name]: value
         })
     }
-
+    
+    // Clear Form contact
     const handleClear = () => {
         setNewContact({firstname: '', lastname: '', email: '', phone: ''})
     }
@@ -32,6 +33,7 @@ const FormContact = (props) => {
 
     return (
         <div>
+        {/* Form Contacts */}
             <form className="mt-5 mb-4" onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-1"></div>
@@ -91,7 +93,6 @@ const FormContact = (props) => {
                         </div>
 
                     </div>
-                    
                         <div className="col-2 pt-2 ml-5">
                             <div className="d-flex justify-content-between align-items-center">
                                 
@@ -99,10 +100,7 @@ const FormContact = (props) => {
                             </div>
                             <div className="d-flex align-self-center justify-content-between mt-2">
                                 <button className="btn-outline-secondary clearBtn" onClick={handleClear} type="reset">Clear</button>
-                            </div>
-                                
-                                
-                            
+                            </div>  
                         </div>
                         <div className="col-1"></div>
                     
