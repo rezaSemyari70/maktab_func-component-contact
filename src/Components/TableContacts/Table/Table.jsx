@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import TableRow from '../TableRow/TableRow';
 import FormContact from '../FormContact/FormContact';
+import './Table.scss';
+
 
 function Table(props ){
     const [contacts ,setContacts] = useState(
@@ -44,18 +46,24 @@ function Table(props ){
     return <>
         
         <div className="container">
-            <div className="row">
-                <input 
-                    name={'search'} 
-                    value={search} 
-                    onChange={handleChange} 
-                    placeholder="Search by Name or Phone"
-                />
+            <div className="row ">
+                <div className="col ">
+                    <div className="row justify-content-center mt-4 fixBox">
+                        <input 
+                            className="form-control form-control-lg bg-info"
+                            name={'search'} 
+                            value={search} 
+                            onChange={handleChange} 
+                            placeholder="Search by Name or Phone"
+                        />
+                        <span><i className="fa fa-search"/></span>
+                    </div>
+                    <div className="formBox">
+                        <FormContact handleAdd={handleAdd}/>
+                    </div>
+                </div>
             </div>
-            <div>
-                <FormContact handleAdd={handleAdd}/>
-            </div>
-            <div className="row justify-content-center">
+            <div className="row justify-content-center contentTable">
                 <div className="col">
                     <table className="table table-hover">
                         <thead className="headerColor">

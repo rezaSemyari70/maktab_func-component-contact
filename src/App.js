@@ -6,8 +6,10 @@ import Table from './Components/TableContacts/Table/Table';
 
 function App() {
   return (
-    <div className="App">
-      <Table/>
+    <div className="backgroundImage">
+      <div className="App">
+        <Table/>
+      </div>
     </div>
   );
 }

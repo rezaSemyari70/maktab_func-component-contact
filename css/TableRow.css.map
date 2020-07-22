@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,AAAA,MAAM,CAAA;EACJ,SAAS,EAAE,UAAW;EACtB,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../src/Components/TableContacts/TableRow/TableRow.scss"
+    ],
+    "names": [],
+    "file": "TableRow.css"
+}

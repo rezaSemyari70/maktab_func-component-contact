@@ -1,0 +1,35 @@
+[33mcommit 7ceab57763c5d1f6603f692af9c78dfe812c930d[m[33m ([m[1;36mHEAD -> [m[1;32mtable-contacts[m[33m, [m[1;31morigin/table-contacts[m[33m)[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Tue Jul 21 12:32:09 2020 +0430
+
+    add FormContact component for add contacts in table
+
+[33mcommit 01739d5c77e5722ee23dbccec4dad0ad5a024214[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Mon Jul 20 12:12:49 2020 +0430
+
+    add feature for delete contacts
+
+[33mcommit 6f16af8b7e5e2ae707aba93ee349720caa35b832[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Mon Jul 20 10:16:04 2020 +0430
+
+    refactor search by name and add search by phone
+
+[33mcommit aa85623c0aa77a543a2dd7851445762f5aa5a846[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Mon Jul 20 09:43:03 2020 +0430
+
+    add search by name
+
+[33mcommit dd258e5ae3490acd6ed2e890f2d025179c3905e0[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Sun Jul 19 11:22:56 2020 +0430
+
+    create Components table & tableRow
+
+[33mcommit c7210d66f8f726c82459b5d31333a44c5ca54423[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: reza <rezasemyari1991@gmail.com>
+Date:   Sat Jul 18 20:43:33 2020 +0430
+
+    start project

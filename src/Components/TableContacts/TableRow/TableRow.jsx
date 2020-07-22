@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './TableRow.scss';
+
 function TableRow(props) {
 
     return (
@@ -9,8 +11,9 @@ function TableRow(props) {
             <td>{`${props.email}`}</td>
             <td>{`${props.phone}`}</td>
             <td>
-                <button onClick={props.handleDelete}>Delete</button>
+                <button className="btn-outline-danger rounded " onClick={props.handleDelete}>Delete</button>
             </td>
+            
         </tr>
 
     );
