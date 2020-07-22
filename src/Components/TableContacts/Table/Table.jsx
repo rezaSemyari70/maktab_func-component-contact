@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import TableRow from '../TableRow/TableRow';
 import FormContact from '../FormContact/FormContact';
 import './Table.scss';
+import AOS from 'aos'
 
 
 function Table(props ){
@@ -42,21 +43,27 @@ function Table(props ){
     const handleDelete = (id) => {
         setContacts([...contacts.filter(contact => contact.id !== id)]);
     }
+
+    AOS.init()
     
     return <>
         
         <div className="container">
             <div className="row ">
                 <div className="col ">
-                    <div className="row justify-content-center mt-4 fixBox">
-                        <input 
-                            className="form-control form-control-lg bg-info"
-                            name={'search'} 
-                            value={search} 
-                            onChange={handleChange} 
-                            placeholder="Search by Name or Phone"
-                        />
-                        <span><i className="fa fa-search"/></span>
+                    <div className="row justify-content-center">
+                        <div className="row justify-content-center mt-4 fixBox" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+                            <input 
+                                className="form-control form-control-lg bg-info"
+                                id="searchInput"
+                                name={'search'} 
+                                value={search} 
+                                onChange={handleChange} 
+                                placeholder="Search by Name or Phone"
+                            />
+                        </div>
                     </div>
                     <div className="formBox">
                         <FormContact handleAdd={handleAdd}/>
@@ -64,8 +71,8 @@ function Table(props ){
                 </div>
             </div>
             <div className="row justify-content-center contentTable">
-                <div className="col">
-                    <table className="table table-hover">
+                <div className="col" >
+                    <table className="table table-hover w3-animate-opacity" >
                         <thead className="headerColor">
                             <tr className="">
                                 <th>Name</th>

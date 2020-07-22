@@ -1,5 +1,14 @@
 .form-control{
-    width: 200px ;
+    width: 175px ;
+    transition: width 0.3s;
+}
+
+#searchInput {
+    transition-timing-function: ease;
+}
+
+.form-control:hover {
+  width:185px !important;
 }
 
 label{
@@ -7,16 +16,16 @@ label{
 }
 
 .saveBtn {
-    width: 150px;
-    height: 40px;
+    width: 140px;
+    height: 38px;
     border-radius: 6px;
     font-weight: bold;
     outline: none !important;
 }
 
 .clearBtn{
-    width: 150px;
-    height: 30px;
+    width: 140px;
+    height: 38px;
     border-radius: 6px;
     font-weight: bold;
     outline: none !important;
@@ -25,3 +34,10 @@ label{
 input::placeholder{
     opacity: 0.4 !important;
 }
+
+.boxBtn{
+    overflow:hidden !important;
+}
+
+
+

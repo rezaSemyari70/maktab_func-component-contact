@@ -1,15 +1,25 @@
 .form-control-lg{
-    width: 70% !important;
+    width: 67% !important;
     background: white;
+    transition: width 0.5s;
+}
+
+#searchInput {
+    transition-timing-function: ease;
+}
+
+.form-control-lg:hover {
+  width:80% !important;
 }
 
 .form-control-lg::placeholder{
     color: white;
+    font-size: 16px;
 }
 
 .fixBox{
     position: fixed;
-    width: 60vw;
+    width: 90vw;
     z-index: 100000;
 }
 
@@ -20,6 +30,10 @@
 .table{
     cursor: default;
     background-color: rgba(235, 235, 235, 0.514);
+}
+
+.contentTable{
+    overflow-x: scroll !important;
 }
 
 .headerColor{

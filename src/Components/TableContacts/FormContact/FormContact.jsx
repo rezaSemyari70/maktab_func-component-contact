@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
+import AOS from 'aos'
 
 import './FormContact.scss';
 
@@ -30,16 +31,19 @@ const FormContact = (props) => {
         }
     }
 
+    AOS.init()
+
     return (
         <div>
-            <form className="mt-5 mb-4" onSubmit={handleSubmit}>
-                <div className="row">
+            <form className="mt-5 mb-4" onSubmit={handleSubmit} >
+                <div className="col d-lg-flex">
                     <div className="col-1"></div>
-                    <div className="col ">
-                        <div className="d-flex justify-content-between align-items-center my-2">
+                    <div className="col" style={{overflow: "hidden"}}>
+                        <div className="d-flex justify-content-between align-items-center my-2"data-aos="fade-left"
+                                    data-aos-offset="300" data-aos-easing="ease-in-sine" >
                             <label htmlFor="exampleInputName1">Name:</label>
                             <input
-                                className="form-control"
+                                className="form-control "
                                 name={"firstname"}
                                 id="name"
                                 value={newContact.firstname}
@@ -48,9 +52,11 @@ const FormContact = (props) => {
                                 placeholder="Enter name of contact"
                                 required
                                 pattern=".{4,}"
-                                title="Please enter at least 4 characters."/>
+                                title="at least 4 character"
+                                />
                         </div>
-                        <div className="d-flex justify-content-between align-items-center my-2">
+                        <div className="d-flex justify-content-between align-items-center my-2" data-aos="fade-right"
+                                    data-aos-offset="300" data-aos-easing="ease-sine">
                             <label htmlFor="exampleInputLastname1">Lastname:</label>
                             <input
                                 className="form-control"
@@ -63,8 +69,9 @@ const FormContact = (props) => {
                                 required/>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="d-flex justify-content-between align-items-center my-2">
+                    <div className="col"  style={{overflow: "hidden"}}>
+                        <div className="d-flex justify-content-between align-items-center my-2" data-aos="fade-left"
+                                    data-aos-offset="300" data-aos-easing="ease-sine">
                             <label htmlFor="exampleInputEmail1">Eamil:</label>
                             <input
                                 className="form-control"
@@ -76,9 +83,11 @@ const FormContact = (props) => {
                                 placeholder="Enter email of contact"
                                 required/>
                         </div>
-                        <div className="d-flex justify-content-between align-items-center my-2">
-                            <label htmlFor="exampleInputPhone1">Phone:</label>
-                            <input
+                        <div >
+                            <div className="d-flex justify-content-between align-items-center my-2" data-aos="fade-right"
+                                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                <label htmlFor="exampleInputPhone1">Phone:</label>
+                                <input
                                 className="form-control"
                                 name={"phone"}
                                 id="phone"
@@ -88,21 +97,18 @@ const FormContact = (props) => {
                                 placeholder="Enter phone of contact"
                                 required
                                 pattern=".{11,}"/>
+                            </div>
                         </div>
-
                     </div>
                     
-                        <div className="col-2 pt-2 ml-5">
-                            <div className="d-flex justify-content-between align-items-center">
+                        <div className="d-flex d-lg-block pt-2 ml-lg-5  align-items-center justify-content-center boxBtn">
+                            <div className="d-flex justify-content-between align-self-center" >
                                 
-                                <button className="btn-success saveBtn" type="submit">Save Contact</button>
+                                <button className="btn-success mr-2 mr-lg-0 saveBtn" type="submit" data-aos="zoom-in">Save Contact</button>
                             </div>
-                            <div className="d-flex align-self-center justify-content-between mt-2">
-                                <button className="btn-outline-secondary clearBtn" onClick={handleClear} type="reset">Clear</button>
+                            <div className="d-flex align-items-center justify-content-between mt-2" >
+                                <button className="btn-outline-secondary mb-2 clearBtn" onClick={handleClear} type="reset" data-aos="zoom-in-up">Clear</button>
                             </div>
-                                
-                                
-                            
                         </div>
                         <div className="col-1"></div>
                     
