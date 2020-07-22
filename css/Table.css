@@ -1,0 +1,28 @@
+.form-control-lg {
+  width: 70% !important;
+  background: white;
+}
+
+.form-control-lg::placeholder {
+  color: white;
+}
+
+.fixBox {
+  position: fixed;
+  width: 60vw;
+  z-index: 100000;
+}
+
+.formBox {
+  margin-top: 90px;
+}
+
+.table {
+  cursor: default;
+  background-color: rgba(235, 235, 235, 0.514);
+}
+
+.headerColor {
+  background-image: linear-gradient(to right, #c2c2c2, #6d6d6d);
+}
+/*# sourceMappingURL=Table.css.map */

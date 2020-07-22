@@ -1,0 +1,27 @@
+.form-control{
+    width: 200px ;
+}
+
+label{
+    margin: 0px;
+}
+
+.saveBtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: bold;
+    outline: none !important;
+}
+
+.clearBtn{
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    outline: none !important;
+}
+
+input::placeholder{
+    opacity: 0.4 !important;
+}

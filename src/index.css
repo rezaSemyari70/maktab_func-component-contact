@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./image/backgroundImage.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow-x: hidden;
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

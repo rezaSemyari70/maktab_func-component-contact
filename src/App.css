@@ -1,5 +1,16 @@
+
 .App {
   text-align: center;
+  
+}
+
+.backgroundImage{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./image/backgroundImage.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow-x: hidden;
 }
 
 .App-logo {
