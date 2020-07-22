@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.523f09c5.chunk.css",
-    "main.js": "/static/js/main.ac0622fc.chunk.js",
-    "main.js.map": "/static/js/main.ac0622fc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b1cc144f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b1cc144f.js.map",
-    "static/js/2.bf1ae51c.chunk.js": "/static/js/2.bf1ae51c.chunk.js",
-    "static/js/2.bf1ae51c.chunk.js.map": "/static/js/2.bf1ae51c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.84927a8edfb13f2937c59e541949dc37.js": "/precache-manifest.84927a8edfb13f2937c59e541949dc37.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.523f09c5.chunk.css.map": "/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.bf1ae51c.chunk.js.LICENSE.txt": "/static/js/2.bf1ae51c.chunk.js.LICENSE.txt"
+    "main.css": "/maktab_func-component-contact/static/css/main.06e4f2d1.chunk.css",
+    "main.js": "/maktab_func-component-contact/static/js/main.2001f9c9.chunk.js",
+    "main.js.map": "/maktab_func-component-contact/static/js/main.2001f9c9.chunk.js.map",
+    "runtime-main.js": "/maktab_func-component-contact/static/js/runtime-main.9600af83.js",
+    "runtime-main.js.map": "/maktab_func-component-contact/static/js/runtime-main.9600af83.js.map",
+    "static/js/2.4557388f.chunk.js": "/maktab_func-component-contact/static/js/2.4557388f.chunk.js",
+    "static/js/2.4557388f.chunk.js.map": "/maktab_func-component-contact/static/js/2.4557388f.chunk.js.map",
+    "index.html": "/maktab_func-component-contact/index.html",
+    "precache-manifest.91b2065b38a91de5667bb4396bbb018d.js": "/maktab_func-component-contact/precache-manifest.91b2065b38a91de5667bb4396bbb018d.js",
+    "service-worker.js": "/maktab_func-component-contact/service-worker.js",
+    "static/css/main.06e4f2d1.chunk.css.map": "/maktab_func-component-contact/static/css/main.06e4f2d1.chunk.css.map",
+    "static/js/2.4557388f.chunk.js.LICENSE.txt": "/maktab_func-component-contact/static/js/2.4557388f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/maktab_func-component-contact/static/media/backgroundImage.87c22da4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1cc144f.js",
-    "static/js/2.bf1ae51c.chunk.js",
-    "static/css/main.523f09c5.chunk.css",
-    "static/js/main.ac0622fc.chunk.js"
+    "static/js/runtime-main.9600af83.js",
+    "static/js/2.4557388f.chunk.js",
+    "static/css/main.06e4f2d1.chunk.css",
+    "static/js/main.2001f9c9.chunk.js"
   ]
 }
